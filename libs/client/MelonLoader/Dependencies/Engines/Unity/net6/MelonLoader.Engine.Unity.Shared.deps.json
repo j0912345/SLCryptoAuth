@@ -1,0 +1,45 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {},
+    ".NETCoreApp,Version=v6.0/win-x64": {
+      "MelonLoader.Engine.Unity.Shared/1.0.0.2176": {
+        "dependencies": {
+          "AssetRipper.Primitives": "3.1.4",
+          "AssetsTools.NET": "3.0.0",
+          "LavaGang.MelonLoader": "1.0.0"
+        },
+        "runtime": {
+          "MelonLoader.Engine.Unity.Shared.dll": {}
+        }
+      },
+      "AssetRipper.Primitives/3.1.4": {},
+      "AssetsTools.NET/3.0.0": {}
+    }
+  },
+  "libraries": {
+    "MelonLoader.Engine.Unity.Shared/1.0.0.2176": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AssetRipper.Primitives/3.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WFPXPetkArrF8HIgAi+vnRrAgsxdhcjCljIUKAdzxbJ/8G3LaEY2YaNZhPrn5cMzzI34kJgv0zVBAp4u3/5k+Q==",
+      "path": "assetripper.primitives/3.1.4",
+      "hashPath": "assetripper.primitives.3.1.4.nupkg.sha512"
+    },
+    "AssetsTools.NET/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mo7TYy/f6Z9YBhmGeluOuaZ310i4qZy0VGCMNgocYajgjwN0m0l04LDpelWIjEkzlqOKZMAp1LspTW/iygSPyQ==",
+      "path": "assetstools.net/3.0.0",
+      "hashPath": "assetstools.net.3.0.0.nupkg.sha512"
+    }
+  }
+}

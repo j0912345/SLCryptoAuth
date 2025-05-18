@@ -1,0 +1,119 @@
+# # JetBrains Rider & Visual Studio C# .gitignore
+
+# ## Общие для IDE и системы ##
+# Файлы конфигурации пользователя
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+
+# Файлы конфигурации Visual Studio (VS2019+)
+.vs/
+
+# Файлы конфигурации JetBrains Rider
+.idea/
+*.iml
+*.sln.iml
+*.sln.DotSettings.user
+*.DotSettings
+*.DotSettings.user
+
+# Кэши и временные файлы ReSharper (часто используется с Rider и VS)
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.ReSharper.User
+*.resharper.user
+
+# ## Вывод сборки ##
+**/[Bb]in/
+**/[Oo]bj/
+**/[Aa]rtifacts/
+**/[Tt]est[Rr]esults/
+**/[Pp]ublish/
+
+# Пакеты NuGet
+# Обычно не нужно игнорировать, так как они восстанавливаются,
+# но если вы генерируете *.nupkg локально и не хотите их коммитить:
+# *.nupkg
+# Если вы используете старый формат packages.config и папку packages:
+# **/packages/*
+# Исключение: не игнорировать packages.config сам по себе
+# !**/packages.config
+
+# Файлы, создаваемые .NET Core CLI (например, dotnet user-secrets)
+**/obj/Debug/netcoreapp*/
+**/obj/Release/netcoreapp*/
+secrets.json # Если используется для user-secrets и не должен быть в репозитории
+*.GeneratedMSBuildEditorConfig.editorconfig # Генерируемые editorconfig
+
+# Локальные настройки публикации (не коммитить учетные данные)
+*.pubxml
+*.pubxml.user
+
+# ## Файлы тестов ##
+*.trx # Test results file
+*.coverage # Code coverage files
+*.coverlet.*.xml # Coverlet coverage results
+
+# ## Файлы логов ##
+*.log
+*.log.*
+*.DS_Store # macOS
+Thumbs.db # Windows
+Desktop.ini # Windows
+
+# ## Файлы специфичные для некоторых проектов ##
+# Например, временные файлы Entity Framework Core Migrations
+# EFSQLScripts/
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+
+# Файлы стилей StyleCop (если не являются частью общих настроек проекта)
+StyleCopReport.xml
+StyleCop.Cache
+
+# Файлы отладчика Visual Studio
+*.pdb # Если вы не хотите коммитить символы отладки релизных сборок
+# (часто полезно их иметь, но иногда их исключают)
+
+# Сертификаты и ключи (НИКОГДА НЕ КОММИТЬТЕ ПРИВАТНЫЕ КЛЮЧИ!)
+*.pfx
+*.key
+*.snk # Strong Name Key, если он приватный
+
+# ## Пользовательские настройки веб-сервера (IIS Express) ##
+# applicationhost.config в .vs может покрывать это, но на всякий случай
+# *[Aa]pplication[Hh]ost.config
+# IISExpress/
+
+# ## Настройки специфичные для разработки (часто содержат секреты) ##
+# Если `appsettings.Development.json` содержит чувствительные данные, игнорируйте его.
+# Если он содержит только общие настройки для разработки, его можно коммитить.
+# Расскомментируйте, если нужно:
+# appsettings.Development.json
+# secrets/
+# *.env
+
+# ## Специфичные файлы для Unity (если вы разрабатываете на C# для Unity) ##
+# Library/
+# Temp/
+# Obj/
+# Builds/
+# Logs/
+# MemoryCaptures/
+# Assets/AssetStoreTools*
+# Assets/AddressableAssetsData/*/*.bin*
+# Assets/StreamingAssets/aa.meta
+# Assets/StreamingAssets/aa/*
+
+# ## Прочее ##
+# Промежуточные файлы Roslyn analyzers
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.issues.json

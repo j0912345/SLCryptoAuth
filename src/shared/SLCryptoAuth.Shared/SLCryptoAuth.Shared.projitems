@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6d0c3a93-97a1-4c76-b7c0-a8bc6ba229a2</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SLCryptoAuth</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Cryptography\DiffieHellman\IDiffieHellmanProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cryptography\DigitalSignature\IDigitalSignatureProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cryptography\DigitalSignature\IDigitalSignatureVerifyProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cryptography\Encryption\IAsymmetricEncryptionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cryptography\Encryption\IEncryptionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cryptography\Encryption\ISymmetricEncryptionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\BinaryReaderExtended.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\BinaryWriterExtended.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Config\Client\ClientConfigManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Config\Client\IdentityKeyLoader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Config\Client\TrustedServerEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Config\Client\TrustedServersStore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\PersistentKeyStorage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\DTO\AuthResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\DTO\AuthResultFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\DTO\RejectionReason.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Handlers\IPacketHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Handlers\PacketHandlerFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\PacketProcessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NicknameUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)IO\Config\Server\" />
+  </ItemGroup>
+</Project>
