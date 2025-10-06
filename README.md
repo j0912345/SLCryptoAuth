@@ -1,24 +1,33 @@
-## Readme for kijetesantakalu's SLCryptoAuth fork
+## Kijetesantakalu's (j0912345's) SLCryptoAuth fork
 MelonLoader client and labAPI server mod for SCP: Secret Laboratory to implement functional and secure authentication that does not require a connection to central servers. This also fixes remote admin.
 
-Written and tested on SCPSL v14.0.3-labapi-beta + MelonLoader v1.0.0-ci.2176 ALPHA Pre-Release.
- - in kijetesantakalu's testing 14.0.3 itself appears to be broken, though that's not SLCryptoAuth's fault.  
-
-Use depot downloader to downolad these v14.0.3 manifests.  
-Client manifest: 7041928528288606435  
-Server manifest: 1429960657914648293
-
-For each game version you need to replace dependencies and recompile the code.
-
 My current goal with this fork is to port SLCryptoAuth to scopophobia and megapatch 2. Probably also some 13.x version(s), but only because somebody requested it and it's only one major version below 14 so it'll probably be a relatively easy place to start. I might port it to other stuff too but if I don't feel like running it on my server I likely won't bother.
+
+### Downloading a specific game version
+Use [DepotDownloader](https://github.com/SteamRE/DepotDownloader) to download specific manifests.  
+You can use the wiki's updates page to find the date a specific version released, and then ctrl+f the steamdb page for that date to get the manifest you need.  
+Server steamdb depot link: https://steamdb.info/depot/996561/manifests/  
+Client steamdb depot link: https://steamdb.info/depot/700331/manifests/  
+Official wiki's updates page: https://en.scpslgame.com/index.php?title=Updates
+
+### Currently supported game versions
+SCPSL v14.0.3-labapi-beta.
+* Client manifest: 7041928528288606435  
+* Server manifest: 1429960657914648293
+
+To set up SLCrypoAuth for a game versison there isn't a build for here:
+ 1. You will need to replace dependencies and recompile the code at a bare minimum.
+ 2. You may need to fix any incompatabilities that may exist between the mod and the new game version. You'll probably just have to test if and see if anything breaks.
 
 ## Acknowledgements
 
 1. Some patches and/or parts of the code in this project were borrowed or based on work from the AxonSL project. The AxonSL project is licensed under the MIT license. The original copyright notice and AxonSL license text can be found here: https://github.com/AxonSL/Axon/blob/master/LICENSE.txt
 
-2. While apparently not used for the original project, kijetesantakalu is using [SCPSL-ModPatch](https://github.com/hopperlopip/SCPSL-ModPatch) to remove the client's anti-cheat, which allows melonloader to run. https://github.com/hopperlopip/SCPSL-ModPatch
+2. While apparently not used for the original project, I (kijetesantakalu) am using [SCPSL-ModPatch](https://github.com/hopperlopip/SCPSL-ModPatch) to remove the client's anti-cheat, which allows melonloader to run. https://github.com/hopperlopip/SCPSL-ModPatch
 
-(the english version of this readme was machine translated from russian with deepl.com and then largely edited)
+3. MelonLoader v1.0.0-ci.2176 ALPHA Pre-Release is used to build the client. For client installation, use [the latest melonloader loader](https://melonloader.co/download) version (0.7.0 or 0.7.1 openbeta at the time of writing).
+
+(the english version of this readme has parts from the original russian readme that were machine translated using deepl.com)
 <hr>
 
 ## Original russian readme (which kijetesantakalu can't read)
