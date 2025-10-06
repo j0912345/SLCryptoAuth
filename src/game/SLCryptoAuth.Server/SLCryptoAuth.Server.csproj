@@ -323,8 +323,4 @@
   <Import Project="..\..\shared\SLCryptoAuth.Shared\SLCryptoAuth.Shared.projitems" Label="Shared" />
   <Import Project="..\..\shared\SLCryptoAuth.Shared.Mono\SLCryptoAuth.Shared.Mono.projitems" Label="Shared" />
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /Y /Q &quot;$(TargetPath)&quot; &quot;C:\Users\Alexander\AppData\Roaming\SCP Secret Laboratory\LabAPI-Beta\plugins\&quot;" />
-  </Target>
-
 </Project>

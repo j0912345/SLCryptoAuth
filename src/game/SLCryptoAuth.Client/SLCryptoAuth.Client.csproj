@@ -366,8 +366,6 @@
   <Import Project="..\..\shared\SLCryptoAuth.Shared\SLCryptoAuth.Shared.projitems" Label="Shared" />
   <Import Project="..\..\shared\SLCryptoAuth.Shared.IL2CPP\SLCryptoAuth.Shared.IL2CPP.projitems" Label="Shared" />
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /Y /Q &quot;$(TargetPath)&quot; &quot;C:\Users\Alexander\Documents\Projects\SCPSL\OfflineAuth\Client\7041928528288606435_Lab-Api-Beta-1\Modded-ML-7\MelonLoader\Mods\&quot;" />
-  </Target>
+
 
 </Project>
