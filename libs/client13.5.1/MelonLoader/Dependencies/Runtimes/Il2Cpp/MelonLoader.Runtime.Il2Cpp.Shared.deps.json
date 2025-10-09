@@ -1,0 +1,27 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {},
+    ".NETCoreApp,Version=v6.0/win-x64": {
+      "MelonLoader.Runtime.Il2Cpp.Shared/1.0.0.2176": {
+        "dependencies": {
+          "LavaGang.MelonLoader": "1.0.0"
+        },
+        "runtime": {
+          "MelonLoader.Runtime.Il2Cpp.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MelonLoader.Runtime.Il2Cpp.Shared/1.0.0.2176": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
