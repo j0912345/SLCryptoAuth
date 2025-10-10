@@ -1,4 +1,4 @@
-## Kijetesantakalu's (j0912345's) SLCryptoAuth fork
+## Kijetesantakalu's SLCryptoAuth fork
 MelonLoader client and labAPI server mod for SCP: Secret Laboratory to implement functional and secure authentication that does not require a connection to central servers. This also fixes remote admin.
 
 My current goal with this fork is to port SLCryptoAuth to scopophobia and megapatch 2. Probably also some 13.x version(s), but only because somebody requested it and it's only one major version below 14 so it'll probably be a relatively easy place to start. I might port it to other stuff too but if I don't feel like running it on my server I likely won't bother.
